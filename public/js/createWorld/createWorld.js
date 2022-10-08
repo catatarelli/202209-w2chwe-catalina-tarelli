@@ -1,6 +1,6 @@
-/* const rows = 5;
-const columns = 5; */
-const newWorld = [];
+const rows = 40;
+const columns = 40;
+let newWorld = [];
 
 const createWorld = (newRows, newColumns) => {
   for (let i = 0; i < newRows; i++) {
@@ -12,6 +12,6 @@ const createWorld = (newRows, newColumns) => {
   return newWorld;
 };
 
-/* newWorld = createWorld(rows, columns); */
+newWorld = createWorld(rows, columns);
 
 export default createWorld;
