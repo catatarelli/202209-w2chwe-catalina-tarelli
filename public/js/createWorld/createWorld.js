@@ -1,17 +1,17 @@
-const rows = 40;
-const columns = 40;
-let newWorld = [];
+const newWorld = [];
 
-const createWorld = (newRows, newColumns) => {
-  for (let i = 0; i < newRows; i++) {
+const createWorld = (rows, columns) => {
+  for (let i = 0; i < rows; i++) {
     newWorld[i] = [];
-    for (let j = 0; j < newColumns; j++) {
-      newWorld[i][j] = Math.floor(Math.random() * 2);
+    for (let j = 0; j < columns; j++) {
+      if (i === 0 || j === 0 || i === columns - 1 || j === rows - 1) {
+        newWorld[i][j] = 0;
+      } else {
+        newWorld[i][j] = Math.floor(Math.random() * 2);
+      }
     }
   }
   return newWorld;
 };
-
-newWorld = createWorld(rows, columns);
 
 export default createWorld;
