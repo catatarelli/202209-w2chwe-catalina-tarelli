@@ -1,3 +1,3 @@
-import playGameOfLife from "./playGameOfLife/playGameOfLife.js";
+import addEventListeners from "./addEventListeners/addEventListeners.js";
 
-playGameOfLife();
+addEventListeners();

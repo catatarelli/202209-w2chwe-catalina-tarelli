@@ -6,3 +6,12 @@
   height: 400px;
   border: 2px solid #000;
 }
+.cell {
+  border: 1px solid color-variables.$main-background-color;
+  width: 10px;
+  height: 10px;
+}
+
+.cell--alive {
+  background-color: color-variables.$gird-main-color;
+}
