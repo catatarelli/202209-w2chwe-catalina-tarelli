@@ -14,5 +14,7 @@ module.exports = {
     "import/extensions": ["error", "always"],
     "no-plusplus": "off",
     "no-continue": "off",
+    "import/no-mutable-exports": "off",
+    "no-import-assign": "off",
   },
 };
