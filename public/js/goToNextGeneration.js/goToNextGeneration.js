@@ -1,5 +1,3 @@
-import createWorld from "../createWorld/createWorld.js";
-
 let nextGeneration = [];
 
 const gotToNextGeneration = (grid) => {
@@ -14,6 +12,7 @@ const gotToNextGeneration = (grid) => {
       for (let i = -1; i < 2; i++) {
         for (let j = -1; j < 2; j++) {
           if (i === 0 && j === 0) {
+            // eslint-disable-next-line no-continue
             continue;
           }
 
