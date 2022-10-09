@@ -1,0 +1,11 @@
+@use "../variables/color-variables";
+@use "../variables/font-variables";
+
+* {
+  box-sizing: border-box;
+}
+
+.main-container {
+  background-color: color-variables.$main-background-color;
+  font-family: font-variables.$main-font-family;
+}
