@@ -6,15 +6,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+  <script src="./js/index.js" type="module"></script>
   <title>Game of Life</title>
 </head>
 
 <body>
-  <div id="world">
-
+  <div class="main-container">
+    <header class="main-header">
+      <h2 class="main-header__additional-heading">John Conway's</h2>
+      <h1 class="main-header__heading">GAME OF LIFE</h1>
+    </header>
+    <main>
+      <div class="gridContainer">
+      </div>
+      <p></p>
+      <div class="controls">
+        <button class="controls__button" id="start">Start</button>
+        <button class="controls__button" id="clear">Clear</button>
+        <button class="controls__button" id="random">Random</button>
+      </div>
+    </main>
   </div>
-
-  <script src="./js/index.js" type="module"></script>
 </body>
 
 </html>
