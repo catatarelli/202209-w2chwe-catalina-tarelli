@@ -1,0 +1,7 @@
+@use "../variables/color-variables";
+@use "../variables/font-variables";
+
+.main-header__additional-heading {
+  font-family: font-variables.$secondary-font-family;
+  color: color-variables.$text-secondary-color;
+}
