@@ -1,7 +1,7 @@
 let nextGeneration = [];
 
-const gotToNextGeneration = (grid) => {
-  nextGeneration = grid.map((arr) => [...arr]);
+const goToNextGeneration = (grid) => {
+  nextGeneration = grid.map((array) => [...array]);
   const rows = grid.length;
   const columns = grid[0].length;
   for (let column = 0; column < grid.length; column++) {
@@ -37,4 +37,4 @@ const gotToNextGeneration = (grid) => {
   return nextGeneration;
 };
 
-export default gotToNextGeneration;
+export default goToNextGeneration;
